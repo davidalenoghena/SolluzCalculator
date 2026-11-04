@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Commercial solar installation (placeholder illustration)">
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5f87bd"/><stop offset="1" stop-color="#c3d4ea"/></linearGradient>
+<linearGradient id="pv" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#24426e"/><stop offset="1" stop-color="#0b1628"/></linearGradient>
+<radialGradient id="sun"><stop offset="0" stop-color="#fff0c6"/><stop offset="0.5" stop-color="#ffcb4a"/><stop offset="1" stop-color="#f99307" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="800" height="500" fill="url(#sky)"/>
+<circle cx="650" cy="110" r="120" fill="url(#sun)"/>
+<circle cx="650" cy="110" r="42" fill="#ffcb4a"/>
+<path d="M0 400 Q200 360 400 390 T800 380 V500 H0Z" fill="#4d7c4a" opacity="0.55"/>
+<rect y="420" width="800" height="80" fill="#3f6b3c"/>
+<rect x="120" y="190" width="420" height="230" fill="#e1eaf5"/>
+<rect x="110" y="178" width="440" height="16" fill="#5f87bd"/>
+<rect x="150" y="230" width="44" height="36" fill="#94b1d6"/><rect x="220" y="230" width="44" height="36" fill="#94b1d6"/><rect x="290" y="230" width="44" height="36" fill="#94b1d6"/><rect x="360" y="230" width="44" height="36" fill="#94b1d6"/><rect x="430" y="230" width="44" height="36" fill="#94b1d6"/><rect x="500" y="230" width="44" height="36" fill="#94b1d6"/><rect x="150" y="290" width="44" height="36" fill="#94b1d6"/><rect x="220" y="290" width="44" height="36" fill="#94b1d6"/><rect x="290" y="290" width="44" height="36" fill="#94b1d6"/><rect x="360" y="290" width="44" height="36" fill="#94b1d6"/><rect x="430" y="290" width="44" height="36" fill="#94b1d6"/><rect x="500" y="290" width="44" height="36" fill="#94b1d6"/><rect x="150" y="350" width="44" height="36" fill="#94b1d6"/><rect x="220" y="350" width="44" height="36" fill="#94b1d6"/><rect x="290" y="350" width="44" height="36" fill="#94b1d6"/><rect x="360" y="350" width="44" height="36" fill="#94b1d6"/><rect x="430" y="350" width="44" height="36" fill="#94b1d6"/><rect x="500" y="350" width="44" height="36" fill="#94b1d6"/>
+<g><rect x="130" y="120" width="52" height="44" rx="2" fill="url(#pv)" stroke="#94b1d6" stroke-width="1.2"/>
+<path d="M147.33333333333334 120V164M164.66666666666666 120V164M130 142.0H182" stroke="#5f87bd" stroke-width="0.8" opacity="0.7"/>
+<rect x="188" y="120" width="52" height="44" rx="2" fill="url(#pv)" stroke="#94b1d6" stroke-width="1.2"/>
+<path d="M205.33333333333334 120V164M222.66666666666666 120V164M188 142.0H240" stroke="#5f87bd" stroke-width="0.8" opacity="0.7"/>
+<rect x="246" y="120" width="52" height="44" rx="2" fill="url(#pv)" stroke="#94b1d6" stroke-width="1.2"/>
+<path d="M263.3333333333333 120V164M280.6666666666667 120V164M246 142.0H298" stroke="#5f87bd" stroke-width="0.8" opacity="0.7"/>
+<rect x="304" y="120" width="52" height="44" rx="2" fill="url(#pv)" stroke="#94b1d6" stroke-width="1.2"/>
+<path d="M321.3333333333333 120V164M338.6666666666667 120V164M304 142.0H356" stroke="#5f87bd" stroke-width="0.8" opacity="0.7"/>
+<rect x="362" y="120" width="52" height="44" rx="2" fill="url(#pv)" stroke="#94b1d6" stroke-width="1.2"/>
+<path d="M379.3333333333333 120V164M396.6666666666667 120V164M362 142.0H414" stroke="#5f87bd" stroke-width="0.8" opacity="0.7"/>
+<rect x="420" y="120" width="52" height="44" rx="2" fill="url(#pv)" stroke="#94b1d6" stroke-width="1.2"/>
+<path d="M437.3333333333333 120V164M454.6666666666667 120V164M420 142.0H472" stroke="#5f87bd" stroke-width="0.8" opacity="0.7"/>
+<rect x="478" y="120" width="52" height="44" rx="2" fill="url(#pv)" stroke="#94b1d6" stroke-width="1.2"/>
+<path d="M495.3333333333333 120V164M512.6666666666666 120V164M478 142.0H530" stroke="#5f87bd" stroke-width="0.8" opacity="0.7"/></g>
+<path d="M130 164 L120 178 M490 164 L540 178" stroke="#5f87bd" stroke-width="3"/>
+<rect x="580" y="300" width="120" height="120" fill="#c3d4ea"/><rect x="600" y="330" width="34" height="90" fill="#24426e"/>
+<text x="24" y="482" font-family="sans-serif" font-size="14" fill="#ffffff" opacity="0.75">Placeholder image – replace with real project photo</text>
+</svg>

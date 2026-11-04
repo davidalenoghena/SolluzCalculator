@@ -1,0 +1,405 @@
+{
+  "meta": {
+    "version": 1,
+    "revision": "2026-11-04",
+    "label": "Initial default configuration – ILLUSTRATIVE placeholder products and prices. Replace with verified Solluz Synergy data before going live."
+  },
+  "currency": "NGN",
+  "company": {
+    "name": "Solluz Synergy",
+    "tagline": "Clean, reliable solar power for homes and businesses across Nigeria.",
+    "email": "info@solluzsynergy.example",
+    "phone": "+234 800 000 0000",
+    "whatsapp": "2348000000000",
+    "address": "[Placeholder address] 12 Example Crescent, Lekki Phase 1, Lagos, Nigeria",
+    "businessHours": "Mon – Fri: 8:00am – 6:00pm · Sat: 9:00am – 2:00pm",
+    "social": {
+      "facebook": "https://facebook.com/",
+      "instagram": "https://instagram.com/",
+      "x": "https://x.com/",
+      "linkedin": "https://linkedin.com/"
+    }
+  },
+  "content": {
+    "hero": {
+      "badge": "Solar solutions for Nigerian homes & businesses",
+      "headline": "Power that never takes a day off.",
+      "subheadline": "Solluz Synergy designs and installs solar, inverter and battery systems that keep your lights on, your business running and your energy bills under control. Find out what you need in minutes."
+    },
+    "intro": {
+      "title": "Engineering energy independence",
+      "body": "[Placeholder] Solluz Synergy is a solar energy solutions company helping households, offices and industries move away from unreliable grid supply and costly generators. From the first load assessment to commissioning and after-sales support, our team delivers systems sized correctly for how you actually use power."
+    },
+    "about": {
+      "overview": "[Placeholder company overview] Solluz Synergy provides end-to-end solar energy solutions – consultation, system design, supply, installation and maintenance – for residential, commercial and industrial clients. We combine quality components with careful engineering so every system performs reliably in Nigerian conditions.",
+      "mission": "[Placeholder] To make clean, dependable and affordable power accessible to every home and business we serve.",
+      "vision": "[Placeholder] To be Nigeria's most trusted partner for renewable energy and energy independence.",
+      "values": [
+        { "title": "Integrity", "description": "Honest assessments, transparent pricing and no overselling." },
+        { "title": "Quality", "description": "Carefully selected components and installation to recognised standards." },
+        { "title": "Reliability", "description": "Systems designed for real-world loads, weather and grid conditions." },
+        { "title": "Customer focus", "description": "Clear communication and responsive support long after installation." }
+      ],
+      "capabilities": [
+        "Site surveys and detailed load assessments",
+        "Hybrid, off-grid and grid-tied system design",
+        "Lithium and lead-acid battery storage",
+        "Roof-top and ground-mounted PV arrays",
+        "Commercial and industrial installations",
+        "Remote monitoring, maintenance and repairs"
+      ]
+    },
+    "whyChooseUs": [
+      { "title": "Correctly sized systems", "description": "We size inverters, batteries and panels from your real appliance usage – not guesswork." },
+      { "title": "Transparent Naira pricing", "description": "Itemised estimates so you know exactly what you are paying for." },
+      { "title": "Experienced installers", "description": "Trained technicians, neat installations and proper protection and earthing." },
+      { "title": "After-sales support", "description": "Maintenance plans, monitoring and fast response when you need help." }
+    ],
+    "services": [
+      {
+        "id": "residential",
+        "title": "Residential Solar Installations",
+        "icon": "home",
+        "summary": "Quiet, clean backup power for homes and apartments – from essential loads to whole-house systems.",
+        "features": ["Whole-home and essential-load designs", "Hybrid systems that work with grid supply", "Neat roof-top installations"]
+      },
+      {
+        "id": "commercial",
+        "title": "Commercial Solar Installations",
+        "icon": "building",
+        "summary": "Reduce diesel spend and downtime for offices, shops, schools, clinics and hotels.",
+        "features": ["Load profiling and energy audits", "Scalable, parallel inverter systems", "Return-on-investment analysis"]
+      },
+      {
+        "id": "industrial",
+        "title": "Industrial Solar Solutions",
+        "icon": "factory",
+        "summary": "Large-scale PV and storage engineered for factories, warehouses and agro-processing sites.",
+        "features": ["Ground-mount and large roof arrays", "Generator and grid integration", "Detailed engineering and project management"]
+      },
+      {
+        "id": "inverters",
+        "title": "Solar Inverter Systems",
+        "icon": "zap",
+        "summary": "Pure sine-wave hybrid and off-grid inverters matched to your load and surge requirements.",
+        "features": ["Hybrid, off-grid and grid-tied options", "Built-in MPPT solar charging", "Upgrades of existing inverter systems"]
+      },
+      {
+        "id": "batteries",
+        "title": "Battery Storage Solutions",
+        "icon": "battery",
+        "summary": "Lithium (LiFePO4) and lead-acid storage sized for the backup hours you need.",
+        "features": ["Long-life lithium battery banks", "Expandable storage", "Battery health checks and replacements"]
+      },
+      {
+        "id": "maintenance",
+        "title": "Maintenance & Support",
+        "icon": "wrench",
+        "summary": "Keep your system performing at its best with inspections, cleaning and fast repairs.",
+        "features": ["Scheduled maintenance plans", "Panel cleaning and inspections", "Troubleshooting and repairs"]
+      }
+    ],
+    "projects": [
+      {
+        "id": "project-lekki-residence",
+        "title": "[Sample] 5 kVA Hybrid Home System",
+        "description": "Hybrid solar system for a family home powering lighting, fans, refrigerator, TVs and a 1HP air conditioner with overnight backup.",
+        "location": "Lekki, Lagos",
+        "category": "Residential",
+        "images": ["/images/projects/residential.svg"],
+        "completionDate": "2026-03-15",
+        "systemSize": "5 kVA · 10 kWh lithium · 4.4 kWp"
+      },
+      {
+        "id": "project-abuja-office",
+        "title": "[Sample] 10 kVA Office Backup",
+        "description": "Solar and storage system for a 25-person office, eliminating daily generator use during working hours.",
+        "location": "Wuse II, Abuja",
+        "category": "Commercial",
+        "images": ["/images/projects/commercial.svg"],
+        "completionDate": "2026-01-28",
+        "systemSize": "10 kVA · 20 kWh lithium · 8.8 kWp"
+      },
+      {
+        "id": "project-ibadan-factory",
+        "title": "[Sample] 40 kVA Agro-Processing Plant",
+        "description": "Ground-mounted PV array with parallel inverters supporting milling and cold-room equipment.",
+        "location": "Ibadan, Oyo",
+        "category": "Industrial",
+        "images": ["/images/projects/industrial.svg"],
+        "completionDate": "2025-11-10",
+        "systemSize": "40 kVA · 60 kWh lithium · 33 kWp"
+      },
+      {
+        "id": "project-ph-clinic",
+        "title": "[Sample] Clinic Cold-Chain System",
+        "description": "Reliable power for vaccine refrigeration, lighting and diagnostic equipment at a community clinic.",
+        "location": "Port Harcourt, Rivers",
+        "category": "Commercial",
+        "images": ["/images/projects/commercial.svg"],
+        "completionDate": "2025-09-02",
+        "systemSize": "5 kVA · 15 kWh lithium · 5.5 kWp"
+      }
+    ],
+    "testimonials": [
+      {
+        "id": "t1",
+        "name": "[Sample] Adaeze O.",
+        "location": "Lagos",
+        "quote": "Our generator now sits idle. The team explained everything clearly and the installation was very neat."
+      },
+      {
+        "id": "t2",
+        "name": "[Sample] Ibrahim M.",
+        "location": "Abuja",
+        "quote": "The estimate matched the final quote closely and the system has run our office for months without issues."
+      },
+      {
+        "id": "t3",
+        "name": "[Sample] Tunde A.",
+        "location": "Ibadan",
+        "quote": "Professional from survey to commissioning. Their maintenance visits keep everything running perfectly."
+      }
+    ]
+  },
+  "applianceCategories": ["Lighting", "Cooling", "Entertainment", "Kitchen", "Office & IT", "Laundry & Cleaning", "Water & Pumps", "Other"],
+  "appliances": [
+    { "id": "led-bulb", "name": "LED Bulb", "category": "Lighting", "defaultWattage": 10, "defaultHours": 6, "surgeFactor": 1, "isActive": true },
+    { "id": "standing-fan", "name": "Standing Fan", "category": "Cooling", "defaultWattage": 75, "defaultHours": 8, "surgeFactor": 1.5, "isActive": true },
+    { "id": "ceiling-fan", "name": "Ceiling Fan", "category": "Cooling", "defaultWattage": 75, "defaultHours": 8, "surgeFactor": 1.5, "isActive": true },
+    { "id": "television", "name": "Television", "category": "Entertainment", "defaultWattage": 100, "defaultHours": 5, "surgeFactor": 1, "isActive": true },
+    { "id": "refrigerator", "name": "Refrigerator", "category": "Kitchen", "defaultWattage": 200, "defaultHours": 10, "surgeFactor": 3, "isActive": true },
+    { "id": "deep-freezer", "name": "Deep Freezer", "category": "Kitchen", "defaultWattage": 300, "defaultHours": 10, "surgeFactor": 3, "isActive": true },
+    { "id": "laptop", "name": "Laptop", "category": "Office & IT", "defaultWattage": 65, "defaultHours": 6, "surgeFactor": 1, "isActive": true },
+    { "id": "desktop-computer", "name": "Desktop Computer", "category": "Office & IT", "defaultWattage": 200, "defaultHours": 6, "surgeFactor": 1, "isActive": true },
+    { "id": "wifi-router", "name": "Wi-Fi Router", "category": "Office & IT", "defaultWattage": 15, "defaultHours": 24, "surgeFactor": 1, "isActive": true },
+    { "id": "phone-charger", "name": "Phone Charger", "category": "Office & IT", "defaultWattage": 10, "defaultHours": 3, "surgeFactor": 1, "isActive": true },
+    { "id": "washing-machine", "name": "Washing Machine", "category": "Laundry & Cleaning", "defaultWattage": 500, "defaultHours": 1, "surgeFactor": 2.5, "isActive": true },
+    { "id": "microwave", "name": "Microwave", "category": "Kitchen", "defaultWattage": 1200, "defaultHours": 0.5, "surgeFactor": 1.5, "isActive": true },
+    { "id": "electric-iron", "name": "Electric Iron", "category": "Laundry & Cleaning", "defaultWattage": 1000, "defaultHours": 0.5, "surgeFactor": 1, "isActive": true },
+    { "id": "water-pump", "name": "Water Pump", "category": "Water & Pumps", "defaultWattage": 750, "defaultHours": 1, "surgeFactor": 3, "isActive": true },
+    { "id": "air-conditioner", "name": "Air Conditioner", "category": "Cooling", "defaultWattage": 1500, "defaultHours": 6, "surgeFactor": 3, "isActive": true },
+    { "id": "electric-kettle", "name": "Electric Kettle", "category": "Kitchen", "defaultWattage": 1500, "defaultHours": 0.25, "surgeFactor": 1, "isActive": true },
+    { "id": "cctv-system", "name": "CCTV System (4 cameras)", "category": "Other", "defaultWattage": 40, "defaultHours": 24, "surgeFactor": 1, "isActive": true },
+    { "id": "sound-system", "name": "Home Sound System", "category": "Entertainment", "defaultWattage": 150, "defaultHours": 3, "surgeFactor": 1, "isActive": true }
+  ],
+  "products": [
+    {
+      "id": "panel-450w-mono", "category": "solar-panel", "name": "450W Mono PERC Solar Panel", "brand": "Placeholder Brand A", "model": "PA-450M",
+      "unitPrice": 118000, "isActive": true, "capacity": 450,
+      "description": "Illustrative product and price. Monocrystalline PERC module suitable for residential roofs.",
+      "specifications": [{ "label": "Cell type", "value": "Monocrystalline PERC" }, { "label": "Efficiency", "value": "20.7%" }, { "label": "Warranty", "value": "12-year product / 25-year performance" }]
+    },
+    {
+      "id": "panel-500w-mono", "category": "solar-panel", "name": "500W Mono Half-Cut Solar Panel", "brand": "Placeholder Brand A", "model": "PA-500MH",
+      "unitPrice": 135000, "isActive": true, "capacity": 500,
+      "description": "Illustrative product and price. Half-cut cell module with improved shade tolerance.",
+      "specifications": [{ "label": "Cell type", "value": "Mono half-cut" }, { "label": "Efficiency", "value": "21.1%" }, { "label": "Warranty", "value": "12-year product / 25-year performance" }]
+    },
+    {
+      "id": "panel-550w-mono", "category": "solar-panel", "name": "550W Mono Half-Cut Solar Panel", "brand": "Placeholder Brand B", "model": "PB-550",
+      "unitPrice": 148000, "isActive": true, "capacity": 550,
+      "description": "Illustrative product and price. High-output module for larger arrays.",
+      "specifications": [{ "label": "Cell type", "value": "Mono half-cut" }, { "label": "Efficiency", "value": "21.3%" }, { "label": "Warranty", "value": "12-year product / 25-year performance" }]
+    },
+    {
+      "id": "panel-600w-bifacial", "category": "solar-panel", "name": "600W Bifacial Solar Panel", "brand": "Placeholder Brand B", "model": "PB-600BF",
+      "unitPrice": 172000, "isActive": true, "capacity": 600,
+      "description": "Illustrative product and price. Bifacial module ideal for ground-mounted commercial arrays.",
+      "specifications": [{ "label": "Cell type", "value": "N-type bifacial" }, { "label": "Efficiency", "value": "22.0%" }, { "label": "Warranty", "value": "15-year product / 30-year performance" }]
+    },
+    {
+      "id": "inv-1.5kva-12v", "category": "inverter", "name": "1.5 kVA Hybrid Inverter (12V)", "brand": "Placeholder Power", "model": "PP-HY1512",
+      "unitPrice": 245000, "isActive": true, "capacity": 1500, "supportedSystemTypes": ["hybrid", "off-grid"], "systemVoltage": 12,
+      "surgeRatio": 2, "hasBuiltInMppt": true, "maxPvInputW": 1200, "parallelCapable": false,
+      "description": "Illustrative product and price. Compact pure sine-wave hybrid inverter for small homes and shops.",
+      "specifications": [{ "label": "Output", "value": "Pure sine wave, 230V AC" }, { "label": "Built-in MPPT", "value": "Yes – up to 1,200W PV" }, { "label": "Warranty", "value": "2 years" }]
+    },
+    {
+      "id": "inv-3.5kva-24v", "category": "inverter", "name": "3.5 kVA Hybrid Inverter (24V)", "brand": "Placeholder Power", "model": "PP-HY3524",
+      "unitPrice": 520000, "isActive": true, "capacity": 3500, "supportedSystemTypes": ["hybrid", "off-grid"], "systemVoltage": 24,
+      "surgeRatio": 2, "hasBuiltInMppt": true, "maxPvInputW": 4000, "parallelCapable": false,
+      "description": "Illustrative product and price. Popular hybrid inverter for medium-sized homes.",
+      "specifications": [{ "label": "Output", "value": "Pure sine wave, 230V AC" }, { "label": "Built-in MPPT", "value": "Yes – up to 4,000W PV" }, { "label": "Warranty", "value": "2 years" }]
+    },
+    {
+      "id": "inv-5kva-48v", "category": "inverter", "name": "5 kVA Hybrid Inverter (48V)", "brand": "Placeholder Power", "model": "PP-HY5048",
+      "unitPrice": 780000, "isActive": true, "capacity": 5000, "supportedSystemTypes": ["hybrid", "off-grid"], "systemVoltage": 48,
+      "surgeRatio": 2, "hasBuiltInMppt": true, "maxPvInputW": 6000, "parallelCapable": true,
+      "description": "Illustrative product and price. Parallel-capable hybrid inverter for large homes and small offices.",
+      "specifications": [{ "label": "Output", "value": "Pure sine wave, 230V AC" }, { "label": "Built-in MPPT", "value": "Yes – up to 6,000W PV" }, { "label": "Parallel", "value": "Up to 6 units" }, { "label": "Warranty", "value": "3 years" }]
+    },
+    {
+      "id": "inv-10kva-48v", "category": "inverter", "name": "10 kVA Hybrid Inverter (48V)", "brand": "Placeholder Power", "model": "PP-HY10048",
+      "unitPrice": 1650000, "isActive": true, "capacity": 10000, "supportedSystemTypes": ["hybrid", "off-grid"], "systemVoltage": 48,
+      "surgeRatio": 2, "hasBuiltInMppt": true, "maxPvInputW": 11000, "parallelCapable": true,
+      "description": "Illustrative product and price. High-capacity hybrid inverter for commercial loads.",
+      "specifications": [{ "label": "Output", "value": "Pure sine wave, 230V AC" }, { "label": "Built-in MPPT", "value": "Dual MPPT – up to 11,000W PV" }, { "label": "Parallel", "value": "Up to 6 units" }, { "label": "Warranty", "value": "3 years" }]
+    },
+    {
+      "id": "inv-3kva-offgrid-24v", "category": "inverter", "name": "3 kVA Off-Grid Inverter (24V, no MPPT)", "brand": "Placeholder Volt", "model": "PV-OG3024",
+      "unitPrice": 350000, "isActive": true, "capacity": 3000, "supportedSystemTypes": ["off-grid"], "systemVoltage": 24,
+      "surgeRatio": 2.5, "hasBuiltInMppt": false, "maxPvInputW": 0, "parallelCapable": false,
+      "description": "Illustrative product and price. Low-frequency off-grid inverter with high surge capacity. Requires a separate solar charge controller.",
+      "specifications": [{ "label": "Output", "value": "Pure sine wave, 230V AC" }, { "label": "Topology", "value": "Low-frequency transformer" }, { "label": "Warranty", "value": "2 years" }]
+    },
+    {
+      "id": "inv-5kw-gridtie", "category": "inverter", "name": "5 kW Grid-Tied Inverter", "brand": "Placeholder Grid", "model": "PG-GT5000",
+      "unitPrice": 650000, "isActive": true, "capacity": 5000, "supportedSystemTypes": ["grid-tied"],
+      "surgeRatio": 1.5, "hasBuiltInMppt": true, "maxPvInputW": 7500, "parallelCapable": true,
+      "description": "Illustrative product and price. String inverter that feeds solar power directly to your loads alongside grid supply (no battery backup).",
+      "specifications": [{ "label": "MPPT", "value": "2 trackers – up to 7,500W PV" }, { "label": "Battery", "value": "Not supported" }, { "label": "Warranty", "value": "5 years" }]
+    },
+    {
+      "id": "inv-10kw-gridtie", "category": "inverter", "name": "10 kW Grid-Tied Inverter", "brand": "Placeholder Grid", "model": "PG-GT10000",
+      "unitPrice": 1150000, "isActive": true, "capacity": 10000, "supportedSystemTypes": ["grid-tied"],
+      "surgeRatio": 1.5, "hasBuiltInMppt": true, "maxPvInputW": 15000, "parallelCapable": true,
+      "description": "Illustrative product and price. Three-phase capable grid-tied inverter for commercial roofs.",
+      "specifications": [{ "label": "MPPT", "value": "2 trackers – up to 15,000W PV" }, { "label": "Battery", "value": "Not supported" }, { "label": "Warranty", "value": "5 years" }]
+    },
+    {
+      "id": "bat-12v-200ah-tubular", "category": "battery", "name": "12V 200Ah Tubular Battery", "brand": "Placeholder Cell", "model": "PC-T12200",
+      "unitPrice": 280000, "isActive": true, "capacity": 2400, "chemistry": "lead-acid", "systemVoltage": 12,
+      "description": "Illustrative product and price. Deep-cycle tubular lead-acid battery (2.4 kWh nominal).",
+      "specifications": [{ "label": "Nominal energy", "value": "2.4 kWh" }, { "label": "Cycle life", "value": "~1,200 cycles @ 50% DoD" }, { "label": "Warranty", "value": "1 year" }]
+    },
+    {
+      "id": "bat-12v-220ah-gel", "category": "battery", "name": "12V 220Ah Gel Battery", "brand": "Placeholder Cell", "model": "PC-G12220",
+      "unitPrice": 330000, "isActive": true, "capacity": 2640, "chemistry": "gel", "systemVoltage": 12,
+      "description": "Illustrative product and price. Maintenance-free sealed gel battery (2.64 kWh nominal).",
+      "specifications": [{ "label": "Nominal energy", "value": "2.64 kWh" }, { "label": "Cycle life", "value": "~1,500 cycles @ 50% DoD" }, { "label": "Warranty", "value": "1 year" }]
+    },
+    {
+      "id": "bat-12v-200ah-lfp", "category": "battery", "name": "12.8V 200Ah Lithium (LiFePO4) Battery", "brand": "Placeholder Lithium", "model": "PL-12200",
+      "unitPrice": 600000, "isActive": true, "capacity": 2560, "chemistry": "lithium", "systemVoltage": 12,
+      "description": "Illustrative product and price. Compact lithium battery for small 12V systems (2.56 kWh).",
+      "specifications": [{ "label": "Nominal energy", "value": "2.56 kWh" }, { "label": "Cycle life", "value": "~6,000 cycles @ 80% DoD" }, { "label": "BMS", "value": "Built-in" }, { "label": "Warranty", "value": "5 years" }]
+    },
+    {
+      "id": "bat-24v-100ah-lfp", "category": "battery", "name": "25.6V 100Ah Lithium (LiFePO4) Battery", "brand": "Placeholder Lithium", "model": "PL-24100",
+      "unitPrice": 650000, "isActive": true, "capacity": 2560, "chemistry": "lithium", "systemVoltage": 24,
+      "description": "Illustrative product and price. Lithium battery for 24V systems (2.56 kWh).",
+      "specifications": [{ "label": "Nominal energy", "value": "2.56 kWh" }, { "label": "Cycle life", "value": "~6,000 cycles @ 80% DoD" }, { "label": "BMS", "value": "Built-in" }, { "label": "Warranty", "value": "5 years" }]
+    },
+    {
+      "id": "bat-48v-5kwh-lfp", "category": "battery", "name": "5 kWh Lithium Battery (48V)", "brand": "Placeholder Lithium", "model": "PL-48100",
+      "unitPrice": 1100000, "isActive": true, "capacity": 5120, "chemistry": "lithium", "systemVoltage": 48,
+      "description": "Illustrative product and price. 51.2V 100Ah wall/rack-mount lithium battery.",
+      "specifications": [{ "label": "Nominal energy", "value": "5.12 kWh" }, { "label": "Cycle life", "value": "~6,000 cycles @ 80% DoD" }, { "label": "BMS", "value": "Built-in, CAN/RS485" }, { "label": "Warranty", "value": "5 years" }]
+    },
+    {
+      "id": "bat-48v-10kwh-lfp", "category": "battery", "name": "10 kWh Lithium Battery (48V)", "brand": "Placeholder Lithium", "model": "PL-48200",
+      "unitPrice": 2050000, "isActive": true, "capacity": 10240, "chemistry": "lithium", "systemVoltage": 48,
+      "description": "Illustrative product and price. 51.2V 200Ah lithium battery for whole-home backup.",
+      "specifications": [{ "label": "Nominal energy", "value": "10.24 kWh" }, { "label": "Cycle life", "value": "~6,000 cycles @ 80% DoD" }, { "label": "BMS", "value": "Built-in, CAN/RS485" }, { "label": "Warranty", "value": "5 years" }]
+    },
+    {
+      "id": "bat-48v-15kwh-lfp", "category": "battery", "name": "15 kWh Lithium Battery (48V)", "brand": "Placeholder Lithium", "model": "PL-48300",
+      "unitPrice": 2950000, "isActive": true, "capacity": 15360, "chemistry": "lithium", "systemVoltage": 48,
+      "description": "Illustrative product and price. 51.2V 300Ah high-capacity lithium battery.",
+      "specifications": [{ "label": "Nominal energy", "value": "15.36 kWh" }, { "label": "Cycle life", "value": "~6,000 cycles @ 80% DoD" }, { "label": "BMS", "value": "Built-in, CAN/RS485" }, { "label": "Warranty", "value": "5 years" }]
+    },
+    {
+      "id": "cc-60a-mppt", "category": "charge-controller", "name": "60A MPPT Charge Controller", "brand": "Placeholder Charge", "model": "PCH-60",
+      "unitPrice": 185000, "isActive": true, "capacity": 60, "supportedVoltages": [12, 24, 48],
+      "description": "Illustrative product and price. Required with inverters that have no built-in solar charger, or when the array exceeds the inverter's PV input.",
+      "specifications": [{ "label": "Max PV voltage", "value": "150V DC" }, { "label": "Battery voltage", "value": "12/24/48V auto" }]
+    },
+    {
+      "id": "cc-100a-mppt", "category": "charge-controller", "name": "100A MPPT Charge Controller", "brand": "Placeholder Charge", "model": "PCH-100",
+      "unitPrice": 320000, "isActive": true, "capacity": 100, "supportedVoltages": [24, 48],
+      "description": "Illustrative product and price. High-current MPPT controller for larger arrays.",
+      "specifications": [{ "label": "Max PV voltage", "value": "250V DC" }, { "label": "Battery voltage", "value": "24/48V auto" }]
+    },
+    {
+      "id": "mount-roof-alu", "category": "mounting", "name": "Roof-top Aluminium Mounting (per panel)", "brand": "Placeholder Mount", "model": "PM-RT",
+      "unitPrice": 18000, "isActive": true, "quantityBasis": "per-panel", "quantityPerBasis": 1,
+      "description": "Illustrative price. Rails, clamps and roof hooks for one panel on pitched roofs.",
+      "specifications": [{ "label": "Material", "value": "Anodised aluminium" }]
+    },
+    {
+      "id": "mount-ground-steel", "category": "mounting", "name": "Ground-mount Steel Structure (per panel)", "brand": "Placeholder Mount", "model": "PM-GM",
+      "unitPrice": 32000, "isActive": true, "quantityBasis": "per-panel", "quantityPerBasis": 1,
+      "description": "Illustrative price. Galvanised steel frame for ground-mounted arrays (per panel).",
+      "specifications": [{ "label": "Material", "value": "Hot-dip galvanised steel" }]
+    },
+    {
+      "id": "cable-standard", "category": "cabling", "name": "Standard Cabling & Wiring Kit (per kWp)", "brand": "Placeholder Cable", "model": "PCB-STD",
+      "unitPrice": 45000, "isActive": true, "quantityBasis": "per-kwp", "quantityPerBasis": 1,
+      "description": "Illustrative price. Solar DC cable, MC4 connectors, battery and AC cabling, sized per kWp of PV.",
+      "specifications": [{ "label": "DC cable", "value": "4–6 mm² solar cable" }]
+    },
+    {
+      "id": "cable-premium", "category": "cabling", "name": "Premium Tinned-Copper Cabling Kit (per kWp)", "brand": "Placeholder Cable", "model": "PCB-PRM",
+      "unitPrice": 65000, "isActive": true, "quantityBasis": "per-kwp", "quantityPerBasis": 1,
+      "description": "Illustrative price. UV-resistant tinned-copper cabling with conduits and trunking.",
+      "specifications": [{ "label": "DC cable", "value": "6 mm² tinned copper" }]
+    },
+    {
+      "id": "protect-standard", "category": "protection", "name": "Standard Protection Kit (per inverter)", "brand": "Placeholder Safe", "model": "PS-STD",
+      "unitPrice": 95000, "isActive": true, "quantityBasis": "per-inverter", "quantityPerBasis": 1,
+      "description": "Illustrative price. DC & AC breakers, fuses, surge protection devices and combiner box.",
+      "specifications": [{ "label": "Includes", "value": "Breakers, SPD, fuses, combiner" }]
+    },
+    {
+      "id": "protect-premium", "category": "protection", "name": "Premium Protection & Earthing Kit (per inverter)", "brand": "Placeholder Safe", "model": "PS-PRM",
+      "unitPrice": 165000, "isActive": true, "quantityBasis": "per-inverter", "quantityPerBasis": 1,
+      "description": "Illustrative price. Adds earthing system and lightning arrestor to the standard protection kit.",
+      "specifications": [{ "label": "Includes", "value": "Breakers, SPD, fuses, earthing, lightning arrestor" }]
+    },
+    {
+      "id": "acc-changeover", "category": "accessory", "name": "Automatic Changeover Switch", "brand": "Placeholder Switch", "model": "PSW-ATS",
+      "unitPrice": 65000, "isActive": true, "quantityBasis": "fixed", "quantityPerBasis": 1, "isOptional": true, "defaultSelected": true,
+      "description": "Illustrative price. Switches automatically between grid, generator and solar supply.",
+      "specifications": [{ "label": "Rating", "value": "63A" }]
+    },
+    {
+      "id": "acc-wifi-monitor", "category": "accessory", "name": "Wi-Fi Monitoring Dongle", "brand": "Placeholder Power", "model": "PP-WIFI",
+      "unitPrice": 35000, "isActive": true, "quantityBasis": "per-inverter", "quantityPerBasis": 1, "isOptional": true, "defaultSelected": false,
+      "description": "Illustrative price. Monitor your system's production and battery status from your phone.",
+      "specifications": [{ "label": "App", "value": "iOS & Android" }]
+    },
+    {
+      "id": "acc-battery-rack", "category": "accessory", "name": "Battery Rack / Cabinet", "brand": "Placeholder Mount", "model": "PM-BR4",
+      "unitPrice": 75000, "isActive": true, "quantityBasis": "per-battery", "quantityPerBasis": 0.25, "isOptional": true, "defaultSelected": false,
+      "description": "Illustrative price. Lockable steel rack holding up to 4 batteries.",
+      "specifications": [{ "label": "Capacity", "value": "Up to 4 batteries" }]
+    }
+  ],
+  "pricing": {
+    "markupPercent": 0,
+    "installation": { "label": "Installation & commissioning", "baseFee": 150000, "perKwpFee": 25000, "isActive": true },
+    "delivery": { "label": "Delivery & logistics", "fee": 50000, "isActive": true },
+    "additionalCharges": [
+      { "id": "site-survey", "name": "Site survey & load assessment", "type": "fixed", "amount": 25000, "isActive": true }
+    ],
+    "optionalServices": [
+      { "id": "maintenance-1yr", "name": "1-year maintenance plan", "description": "Quarterly inspection, panel cleaning and system health checks.", "price": 120000, "isActive": true },
+      { "id": "extended-warranty", "name": "Extended workmanship warranty (+2 years)", "description": "Extends the installation workmanship warranty by two years.", "price": 90000, "isActive": true },
+      { "id": "remote-monitoring-setup", "name": "Remote monitoring setup & training", "description": "Configuration of monitoring app and a walkthrough of your system.", "price": 20000, "isActive": true }
+    ],
+    "discounts": [
+      { "id": "promo-example", "label": "Promotional discount (example – inactive)", "type": "percent", "value": 5, "minSubtotal": 3000000, "isActive": false }
+    ],
+    "tax": { "label": "VAT", "ratePercent": 7.5, "isActive": true }
+  },
+  "calculator": {
+    "inverterEfficiency": 0.9,
+    "batteryEfficiency": 0.95,
+    "depthOfDischarge": { "lithium": 0.9, "lead-acid": 0.5, "gel": 0.6 },
+    "peakSunHours": 4.5,
+    "systemDeratingFactor": 0.75,
+    "inverterSafetyMargin": 0.25,
+    "powerFactor": 0.8,
+    "defaultInverterSurgeRatio": 2,
+    "diversityFactor": 0.7,
+    "solarCoverage": 1,
+    "chargeControllerSafetyFactor": 1.25,
+    "defaultSystemVoltage": 48,
+    "defaultBackupHours": 8,
+    "maxBackupHours": 48,
+    "recommendedSystemType": "hybrid",
+    "maxParallelInverters": 6,
+    "preferredBatteryChemistry": "lithium"
+  }
+}
