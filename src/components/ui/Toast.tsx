@@ -32,7 +32,7 @@ export function ToastProvider({ children }: { children: ReactNode }) {
                 'pointer-events-auto flex max-w-md items-start gap-2.5 rounded-xl px-4 py-3 text-sm font-medium text-white shadow-lg animate-fade-up',
                 t.tone === 'success' && 'bg-emerald-600',
                 t.tone === 'error' && 'bg-red-600',
-                t.tone === 'info' && 'bg-navy-800',
+                t.tone === 'info' && 'bg-secondary-800',
               )}
             >
               <Icon className="mt-0.5 h-4.5 w-4.5 shrink-0" />

@@ -166,7 +166,7 @@ export function CalculatorSettings({ draft, update }: ManagerProps) {
                 <Stat label="Battery" value={formatKwh(preview.design.summary.batteryRequiredWh)} />
                 <Stat label="Solar" value={formatKwp(preview.sizing.requiredPvW)} />
                 <Stat label="Panels" value={preview.design.summary.panelCount} />
-                <Stat label="Estimated total" value={formatNaira(preview.price.total)} className="col-span-2 bg-sun-50" />
+                <Stat label="Estimated total" value={formatNaira(preview.price.total)} className="col-span-2 bg-primary-50" />
               </div>
             ) : (
               <p className="text-sm text-red-600">Enter valid values to see a preview.</p>

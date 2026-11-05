@@ -36,13 +36,13 @@ function QuickEstimate() {
   const change = (id: string, d: number) => setQty((q) => ({ ...q, [id]: Math.max(0, Math.min(99, (q[id] ?? 0) + d)) }));
 
   return (
-    <div className="rounded-3xl border border-white/15 bg-white/95 p-5 text-slate-800 shadow-2xl shadow-navy-950/40 backdrop-blur sm:p-6">
+    <div className="rounded-3xl border border-white/15 bg-white/95 p-5 text-slate-800 shadow-2xl shadow-secondary-950/40 backdrop-blur sm:p-6">
       <div className="flex items-center gap-3">
-        <div className="rounded-xl bg-sun-100 p-2.5 text-sun-700">
+        <div className="rounded-xl bg-primary-100 p-2.5 text-primary-700">
           <Calculator className="h-5 w-5" />
         </div>
         <div>
-          <p className="font-bold text-navy-950">Quick solar estimate</p>
+          <p className="font-bold text-secondary-950">Quick solar estimate</p>
           <p className="text-xs text-slate-500">Pick your appliances to get started</p>
         </div>
       </div>
@@ -50,7 +50,7 @@ function QuickEstimate() {
         {quick.map((a) => {
           const q = qty[a.id] ?? 0;
           return (
-            <li key={a.id} className={cn('flex items-center justify-between rounded-xl border px-3 py-2 transition', q ? 'border-sun-300 bg-sun-50' : 'border-slate-200')}>
+            <li key={a.id} className={cn('flex items-center justify-between rounded-xl border px-3 py-2 transition', q ? 'border-primary-300 bg-primary-50' : 'border-slate-200')}>
               <span className="min-w-0">
                 <span className="block truncate text-sm font-semibold">{a.name}</span>
                 <span className="text-xs text-slate-500">{a.defaultWattage} W</span>
@@ -60,7 +60,7 @@ function QuickEstimate() {
                   <Minus className="h-4 w-4" />
                 </button>
                 <span className="w-5 text-center text-sm font-bold tabular-nums">{q}</span>
-                <button type="button" aria-label={`More ${a.name}`} onClick={() => change(a.id, 1)} className="rounded-md p-1 text-navy-700 hover:bg-white">
+                <button type="button" aria-label={`More ${a.name}`} onClick={() => change(a.id, 1)} className="rounded-md p-1 text-secondary-700 hover:bg-white">
                   <Plus className="h-4 w-4" />
                 </button>
               </span>
@@ -68,14 +68,14 @@ function QuickEstimate() {
           );
         })}
       </ul>
-      <div className="mt-4 grid grid-cols-2 gap-3 rounded-xl bg-navy-950 p-4 text-white">
+      <div className="mt-4 grid grid-cols-2 gap-3 rounded-xl bg-secondary-950 p-4 text-white">
         <div>
-          <p className="text-[11px] font-semibold tracking-wide text-navy-300 uppercase">Connected load</p>
+          <p className="text-[11px] font-semibold tracking-wide text-secondary-300 uppercase">Connected load</p>
           <p className="text-xl font-bold tabular-nums">{formatWatts(load)}</p>
         </div>
         <div>
-          <p className="text-[11px] font-semibold tracking-wide text-navy-300 uppercase">Daily energy</p>
-          <p className="text-xl font-bold text-sun-400 tabular-nums">{formatKwh(energy)}</p>
+          <p className="text-[11px] font-semibold tracking-wide text-secondary-300 uppercase">Daily energy</p>
+          <p className="text-xl font-bold text-primary-400 tabular-nums">{formatKwh(energy)}</p>
         </div>
       </div>
       <Button onClick={go} className="mt-4 w-full" size="lg" disabled={!selected.length}>
@@ -89,11 +89,11 @@ export function Hero() {
   const { config } = useConfig();
   const { hero } = config.content;
   return (
-    <section className="relative overflow-hidden bg-navy-950 pt-28 pb-20 text-white sm:pt-36 lg:pb-28">
+    <section className="relative overflow-hidden bg-secondary-950 pt-28 pb-20 text-white sm:pt-36 lg:pb-28">
       {/* decorative background */}
       <div className="pointer-events-none absolute inset-0">
-        <div className="absolute -top-40 right-0 h-[32rem] w-[32rem] rounded-full bg-sun-500/25 blur-3xl" />
-        <div className="absolute bottom-0 -left-40 h-[28rem] w-[28rem] rounded-full bg-navy-500/30 blur-3xl" />
+        <div className="absolute -top-40 right-0 h-[32rem] w-[32rem] rounded-full bg-primary-500/25 blur-3xl" />
+        <div className="absolute bottom-0 -left-40 h-[28rem] w-[28rem] rounded-full bg-secondary-500/30 blur-3xl" />
         <svg className="absolute inset-0 h-full w-full opacity-[0.07]" aria-hidden>
           <defs>
             <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
@@ -106,12 +106,12 @@ export function Hero() {
 
       <Container className="relative grid items-center gap-12 lg:grid-cols-[1.1fr_1fr]">
         <div className="animate-fade-up">
-          <span className="inline-flex items-center gap-2 rounded-full border border-sun-400/30 bg-sun-400/10 px-3 py-1 text-xs font-semibold text-sun-300">
+          <span className="inline-flex items-center gap-2 rounded-full border border-primary-400/30 bg-primary-400/10 px-3 py-1 text-xs font-semibold text-primary-300">
             <Sun className="h-3.5 w-3.5" />
             {hero.badge}
           </span>
           <h1 className="mt-5 text-4xl leading-[1.08] font-extrabold text-white sm:text-5xl lg:text-6xl">{hero.headline}</h1>
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-navy-200">{hero.subheadline}</p>
+          <p className="mt-6 max-w-xl text-lg leading-relaxed text-secondary-200">{hero.subheadline}</p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <ButtonLink to="/calculator" size="lg" icon={<Calculator className="h-5 w-5" />}>
               Calculate Your Solar Needs
@@ -126,8 +126,8 @@ export function Hero() {
               { icon: ShieldCheck, label: 'Quality components' },
               { icon: Sun, label: 'Sized for Nigerian sun' },
             ].map(({ icon: Icon, label }) => (
-              <div key={label} className="flex flex-col gap-2 text-sm text-navy-200">
-                <Icon className="h-5 w-5 text-sun-400" />
+              <div key={label} className="flex flex-col gap-2 text-sm text-secondary-200">
+                <Icon className="h-5 w-5 text-primary-400" />
                 {label}
               </div>
             ))}

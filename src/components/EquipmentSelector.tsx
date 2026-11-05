@@ -56,18 +56,18 @@ export function OptionRow({ option, unitPrice, selected, recommended, delta, onS
   const [open, setOpen] = useState(false);
   const p = option.product;
   return (
-    <li className={cn('rounded-xl border-2 p-3.5 transition sm:p-4', selected ? 'border-sun-500 bg-sun-50/60' : 'border-slate-200 hover:border-navy-200')}>
+    <li className={cn('rounded-xl border-2 p-3.5 transition sm:p-4', selected ? 'border-primary-500 bg-primary-50/60' : 'border-slate-200 hover:border-secondary-200')}>
       <label className="flex cursor-pointer items-start gap-3">
         <input
           type={multi ? 'checkbox' : 'radio'}
           name={name}
           checked={selected}
           onChange={onSelect}
-          className="mt-1 h-4.5 w-4.5 shrink-0 accent-sun-500"
+          className="mt-1 h-4.5 w-4.5 shrink-0 accent-primary-500"
         />
         <span className="min-w-0 flex-1">
           <span className="flex flex-wrap items-center gap-2">
-            <span className="font-semibold text-navy-950">{p.name}</span>
+            <span className="font-semibold text-secondary-950">{p.name}</span>
             {recommended && (
               <Badge tone="green">
                 <Star className="h-3 w-3" /> Recommended
@@ -80,14 +80,14 @@ export function OptionRow({ option, unitPrice, selected, recommended, delta, onS
           </span>
         </span>
         <span className="shrink-0 text-right">
-          <span className="block text-sm font-bold text-navy-950 tabular-nums">{formatNaira(unitPrice * option.quantity)}</span>
+          <span className="block text-sm font-bold text-secondary-950 tabular-nums">{formatNaira(unitPrice * option.quantity)}</span>
           <span className="block text-xs text-slate-500 tabular-nums">
             {option.quantity} × {formatNaira(unitPrice)}
           </span>
           {!selected && <Delta amount={delta} />}
         </span>
       </label>
-      <button type="button" onClick={() => setOpen((o) => !o)} className="mt-2 ml-7.5 inline-flex items-center gap-1 text-xs font-semibold text-navy-600 hover:text-navy-900" aria-expanded={open}>
+      <button type="button" onClick={() => setOpen((o) => !o)} className="mt-2 ml-7.5 inline-flex items-center gap-1 text-xs font-semibold text-secondary-600 hover:text-secondary-900" aria-expanded={open}>
         {open ? 'Hide' : 'View'} specifications <ChevronDown className={cn('h-3.5 w-3.5 transition', open && 'rotate-180')} />
       </button>
       {open && <Specs product={p} />}

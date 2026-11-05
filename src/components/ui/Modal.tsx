@@ -39,7 +39,7 @@ export function Modal({ open, onClose, title, description, children, footer, siz
   if (!open) return null;
   return createPortal(
     <div className="fixed inset-0 z-[60] flex items-end justify-center p-0 sm:items-center sm:p-4 print:hidden">
-      <div className="absolute inset-0 bg-navy-950/60 backdrop-blur-sm" onClick={onClose} aria-hidden />
+      <div className="absolute inset-0 bg-secondary-950/60 backdrop-blur-sm" onClick={onClose} aria-hidden />
       <div
         ref={panelRef}
         tabIndex={-1}

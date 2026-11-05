@@ -60,7 +60,7 @@ export function ListEditor<T>({ items, render, onAdd, onRemove, onMove, addLabel
       {items.map((item, i) => (
         <div key={i} className="rounded-xl border border-slate-200 p-4">
           <div className="mb-3 flex items-center justify-between gap-2">
-            <span className="truncate text-sm font-bold text-navy-950">{itemLabel(item) || `Item ${i + 1}`}</span>
+            <span className="truncate text-sm font-bold text-secondary-950">{itemLabel(item) || `Item ${i + 1}`}</span>
             <span className="flex shrink-0 gap-1">
               {onMove && (
                 <>

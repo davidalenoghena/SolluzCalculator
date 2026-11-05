@@ -12,8 +12,8 @@ export function SizingSummary({ sizing, design }: { sizing: SizingResult; design
   return (
     <div className="space-y-4">
       <div className="flex flex-wrap items-center gap-2">
-        <Badge tone="navy">{systemLabel} system</Badge>
-        {sizing.systemTypeAutoSelected && <Badge tone="sun">Recommended for you</Badge>}
+        <Badge tone="secondary">{systemLabel} system</Badge>
+        {sizing.systemTypeAutoSelected && <Badge tone="primary">Recommended for you</Badge>}
         {d.systemVoltage > 0 && sizing.systemType !== 'grid-tied' && <Badge>{d.systemVoltage}V battery system</Badge>}
       </div>
       <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
@@ -31,35 +31,35 @@ export function SizingSummary({ sizing, design }: { sizing: SizingResult; design
           label="Inverter capacity"
           value={formatVA(sizing.inverter.requiredVA)}
           hint={d.inverterUnits ? `Selected: ${d.inverterUnits > 1 ? `${d.inverterUnits} × ` : ''}${formatVA(d.inverterTotalVA / d.inverterUnits)}` : 'Required (minimum)'}
-          className="border-sun-200 bg-sun-50/60"
+          className="border-primary-200 bg-primary-50/60"
         />
         <Stat
           icon={<Battery className={ic} />}
           label="Battery capacity"
           value={sizing.needsBattery ? formatKwh(d.batteryRequiredWh || sizing.batteryWhByChemistry.lithium) : '—'}
           hint={d.batteryBankWh ? `Selected bank: ${formatKwh(d.batteryBankWh)}` : sizing.needsBattery ? 'Required (nominal)' : 'Not required'}
-          className="border-sun-200 bg-sun-50/60"
+          className="border-primary-200 bg-primary-50/60"
         />
         <Stat
           icon={<Sun className={ic} />}
           label="Solar capacity"
           value={formatKwp(sizing.requiredPvW)}
           hint={d.arrayW ? `Selected array: ${formatKwp(d.arrayW)}` : 'Required'}
-          className="border-sun-200 bg-sun-50/60"
+          className="border-primary-200 bg-primary-50/60"
         />
         <Stat
           icon={<LayoutGrid className={ic} />}
           label="Solar panels"
           value={d.panelCount ? `${d.panelCount} panels` : '—'}
           hint={design.panel.selected ? `${design.panel.selected.product.capacity} W each · ~${formatKwh(d.estimatedDailyProductionWh)}/day` : undefined}
-          className="border-sun-200 bg-sun-50/60"
+          className="border-primary-200 bg-primary-50/60"
         />
       </div>
       {sizing.notes.length > 0 && (
-        <ul className="space-y-1.5 rounded-xl bg-navy-50 p-4 text-sm text-navy-900">
+        <ul className="space-y-1.5 rounded-xl bg-secondary-50 p-4 text-sm text-secondary-900">
           {sizing.notes.map((n) => (
             <li key={n} className="flex gap-2">
-              <Info className="mt-0.5 h-4 w-4 shrink-0 text-navy-500" />
+              <Info className="mt-0.5 h-4 w-4 shrink-0 text-secondary-500" />
               {n}
             </li>
           ))}

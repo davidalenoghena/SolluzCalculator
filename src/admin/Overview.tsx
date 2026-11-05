@@ -55,7 +55,7 @@ export function Overview({ draft, source }: { draft: AppConfig; source: ConfigSo
         <AdminCard
           title="Current calculator assumptions"
           action={
-            <Link to="/admin/calculator" className="text-sm font-semibold text-sun-700 hover:underline">
+            <Link to="/admin/calculator" className="text-sm font-semibold text-primary-700 hover:underline">
               Edit
             </Link>
           }
@@ -64,7 +64,7 @@ export function Overview({ draft, source }: { draft: AppConfig; source: ConfigSo
             {assumptions.map(([k, v]) => (
               <div key={k} className="flex justify-between py-2">
                 <dt className="text-slate-600">{k}</dt>
-                <dd className="font-semibold text-navy-950">{v}</dd>
+                <dd className="font-semibold text-secondary-950">{v}</dd>
               </div>
             ))}
           </dl>

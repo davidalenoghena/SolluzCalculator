@@ -290,7 +290,7 @@ export function ConfigurationManager({ draft, update, dirty, onReplaced }: Props
                   <tr key={k} className="border-b border-slate-100">
                     <td className="py-1.5 text-slate-600">{k}</td>
                     <td className="py-1.5 text-right">{a}</td>
-                    <td className={`py-1.5 text-right font-semibold ${a !== b ? 'text-sun-700' : ''}`}>{b}</td>
+                    <td className={`py-1.5 text-right font-semibold ${a !== b ? 'text-primary-700' : ''}`}>{b}</td>
                   </tr>
                 ))}
               </tbody>

@@ -10,7 +10,7 @@ export function CardHeader({ title, description, action, icon }: { title: ReactN
   return (
     <div className="flex flex-wrap items-start justify-between gap-3 border-b border-slate-100 px-5 py-4 sm:px-6">
       <div className="flex min-w-0 items-start gap-3">
-        {icon && <div className="mt-0.5 rounded-lg bg-sun-100 p-2 text-sun-700">{icon}</div>}
+        {icon && <div className="mt-0.5 rounded-lg bg-primary-100 p-2 text-primary-700">{icon}</div>}
         <div className="min-w-0">
           <h3 className="text-base font-bold sm:text-lg">{title}</h3>
           {description && <p className="mt-0.5 text-sm text-slate-500">{description}</p>}
@@ -25,11 +25,11 @@ export function CardBody({ className, ...rest }: HTMLAttributes<HTMLDivElement>)
   return <div className={cn('px-5 py-5 sm:px-6', className)} {...rest} />;
 }
 
-type Tone = 'neutral' | 'sun' | 'navy' | 'green' | 'red';
+type Tone = 'neutral' | 'primary' | 'secondary' | 'green' | 'red';
 const badgeTones: Record<Tone, string> = {
   neutral: 'bg-slate-100 text-slate-700',
-  sun: 'bg-sun-100 text-sun-800',
-  navy: 'bg-navy-100 text-navy-800',
+  primary: 'bg-primary-100 text-primary-800',
+  secondary: 'bg-secondary-100 text-secondary-800',
   green: 'bg-emerald-100 text-emerald-800',
   red: 'bg-red-100 text-red-700',
 };
@@ -40,7 +40,7 @@ export function Badge({ tone = 'neutral', className, children }: { tone?: Tone; 
 
 type AlertTone = 'info' | 'warning' | 'success' | 'error';
 const alertStyles: Record<AlertTone, { cls: string; Icon: typeof Info }> = {
-  info: { cls: 'border-navy-200 bg-navy-50 text-navy-900', Icon: Info },
+  info: { cls: 'border-secondary-200 bg-secondary-50 text-secondary-900', Icon: Info },
   warning: { cls: 'border-amber-300 bg-amber-50 text-amber-900', Icon: AlertTriangle },
   success: { cls: 'border-emerald-300 bg-emerald-50 text-emerald-900', Icon: CheckCircle2 },
   error: { cls: 'border-red-300 bg-red-50 text-red-900', Icon: XCircle },
@@ -67,7 +67,7 @@ export function Stat({ label, value, hint, icon, className }: { label: string; v
         {icon}
         {label}
       </div>
-      <div className="mt-1.5 text-xl font-bold text-navy-950 tabular-nums">{value}</div>
+      <div className="mt-1.5 text-xl font-bold text-secondary-950 tabular-nums">{value}</div>
       {hint && <div className="mt-0.5 text-xs text-slate-500">{hint}</div>}
     </div>
   );

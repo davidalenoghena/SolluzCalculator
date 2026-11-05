@@ -34,10 +34,10 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-2 gap-4">
             {content.about.values.slice(0, 4).map((v, i) => (
-              <div key={v.title} className={`rounded-2xl p-6 ${i % 3 === 0 ? 'bg-navy-950 text-white' : 'bg-sun-50'}`}>
-                <BadgeCheck className={`h-7 w-7 ${i % 3 === 0 ? 'text-sun-400' : 'text-sun-600'}`} />
+              <div key={v.title} className={`rounded-2xl p-6 ${i % 3 === 0 ? 'bg-secondary-950 text-white' : 'bg-primary-50'}`}>
+                <BadgeCheck className={`h-7 w-7 ${i % 3 === 0 ? 'text-primary-400' : 'text-primary-600'}`} />
                 <h3 className={`mt-4 font-bold ${i % 3 === 0 ? 'text-white' : ''}`}>{v.title}</h3>
-                <p className={`mt-1.5 text-sm leading-relaxed ${i % 3 === 0 ? 'text-navy-200' : 'text-slate-600'}`}>{v.description}</p>
+                <p className={`mt-1.5 text-sm leading-relaxed ${i % 3 === 0 ? 'text-secondary-200' : 'text-slate-600'}`}>{v.description}</p>
               </div>
             ))}
           </div>
@@ -52,14 +52,14 @@ export default function Home() {
             <Link
               key={s.id}
               to={`/services#${s.id}`}
-              className="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-sun-300 hover:shadow-lg"
+              className="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-primary-300 hover:shadow-lg"
             >
-              <div className="inline-flex rounded-xl bg-navy-950 p-3 text-sun-400 transition group-hover:bg-sun-500 group-hover:text-navy-950">
+              <div className="inline-flex rounded-xl bg-secondary-950 p-3 text-primary-400 transition group-hover:bg-primary-600 group-hover:text-white">
                 <ServiceIcon name={s.icon} className="h-6 w-6" />
               </div>
               <h3 className="mt-5 text-lg font-bold">{s.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-slate-600">{s.summary}</p>
-              <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-sun-700">
+              <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-primary-700">
                 Learn more <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
               </span>
             </Link>
@@ -74,9 +74,9 @@ export default function Home() {
           {steps.map((s, i) => (
             <li key={s.title} className="relative rounded-2xl border border-white/10 bg-white/5 p-6">
               <span className="absolute top-5 right-5 text-4xl font-extrabold text-white/10">{String(i + 1).padStart(2, '0')}</span>
-              <s.icon className="h-8 w-8 text-sun-400" />
+              <s.icon className="h-8 w-8 text-primary-400" />
               <h3 className="mt-5 font-bold text-white">{s.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-navy-200">{s.text}</p>
+              <p className="mt-2 text-sm leading-relaxed text-secondary-200">{s.text}</p>
             </li>
           ))}
         </ol>
@@ -93,7 +93,7 @@ export default function Home() {
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {content.whyChooseUs.map((w) => (
             <div key={w.title} className="rounded-2xl border border-slate-200 p-6">
-              <div className="h-1 w-10 rounded-full bg-sun-500" />
+              <div className="h-1 w-10 rounded-full bg-primary-500" />
               <h3 className="mt-5 font-bold">{w.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-slate-600">{w.description}</p>
             </div>
@@ -125,10 +125,10 @@ export default function Home() {
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {content.testimonials.map((t) => (
               <figure key={t.id} className="flex flex-col rounded-2xl bg-slate-50 p-6">
-                <Quote className="h-8 w-8 text-sun-500" />
+                <Quote className="h-8 w-8 text-primary-500" />
                 <blockquote className="mt-4 flex-1 leading-relaxed text-slate-700">“{t.quote}”</blockquote>
                 <figcaption className="mt-5 text-sm">
-                  <span className="font-bold text-navy-950">{t.name}</span>
+                  <span className="font-bold text-secondary-950">{t.name}</span>
                   <span className="text-slate-500"> · {t.location}</span>
                 </figcaption>
               </figure>
@@ -139,17 +139,17 @@ export default function Home() {
 
       {/* CTA */}
       <section className="px-4 pb-16 sm:px-6 sm:pb-24 lg:px-8">
-        <div className="relative mx-auto max-w-7xl overflow-hidden rounded-3xl bg-gradient-to-br from-sun-400 via-sun-500 to-sun-600 px-6 py-14 text-center sm:px-12">
+        <div className="relative mx-auto max-w-7xl overflow-hidden rounded-3xl bg-gradient-to-br from-primary-400 via-primary-500 to-primary-600 px-6 py-14 text-center sm:px-12">
           <div className="pointer-events-none absolute -top-20 -right-20 h-72 w-72 rounded-full bg-white/20 blur-2xl" />
-          <h2 className="relative text-3xl font-extrabold text-navy-950 sm:text-4xl">Ready to stop paying for fuel?</h2>
-          <p className="relative mx-auto mt-4 max-w-2xl text-lg text-navy-900/80">
+          <h2 className="relative text-3xl font-extrabold text-secondary-950 sm:text-4xl">Ready to stop paying for fuel?</h2>
+          <p className="relative mx-auto mt-4 max-w-2xl text-lg text-secondary-900/80">
             Find out the right system size and an estimated cost for your home or business in minutes.
           </p>
           <div className="relative mt-8 flex flex-col justify-center gap-3 sm:flex-row">
             <ButtonLink to="/calculator" variant="secondary" size="lg" icon={<Calculator className="h-5 w-5" />}>
               Calculate Your Solar Needs
             </ButtonLink>
-            <ButtonLink to="/contact" variant="outline" size="lg" className="border-navy-950/20 bg-white/80">
+            <ButtonLink to="/contact" variant="outline" size="lg" className="border-secondary-950/20 bg-white/80">
               Contact Us
             </ButtonLink>
           </div>
@@ -167,10 +167,10 @@ export default function Home() {
           ].map(({ icon: Icon, label, value, href }) => {
             const inner = (
               <>
-                <Icon className="h-6 w-6 shrink-0 text-sun-600" />
+                <Icon className="h-6 w-6 shrink-0 text-primary-600" />
                 <span className="min-w-0">
                   <span className="block text-xs font-semibold tracking-wide text-slate-500 uppercase">{label}</span>
-                  <span className="block font-semibold break-words text-navy-950">{value}</span>
+                  <span className="block font-semibold break-words text-secondary-950">{value}</span>
                 </span>
               </>
             );

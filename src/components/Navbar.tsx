@@ -55,10 +55,10 @@ export function Navbar() {
                     'rounded-lg px-3 py-2 text-sm font-semibold transition-colors',
                     solid
                       ? isActive
-                        ? 'text-sun-600'
-                        : 'text-slate-700 hover:text-navy-950'
+                        ? 'text-primary-600'
+                        : 'text-slate-700 hover:text-secondary-950'
                       : isActive
-                        ? 'text-sun-400'
+                        ? 'text-primary-400'
                         : 'text-white/85 hover:text-white',
                   )
                 }
@@ -70,7 +70,7 @@ export function Navbar() {
         </ul>
 
         <div className="hidden items-center gap-3 lg:flex">
-          <a href={telLink(config.company.phone)} className={cn('flex items-center gap-1.5 text-sm font-semibold', solid ? 'text-navy-800' : 'text-white')}>
+          <a href={telLink(config.company.phone)} className={cn('flex items-center gap-1.5 text-sm font-semibold', solid ? 'text-secondary-800' : 'text-white')}>
             <Phone className="h-4 w-4" />
             {config.company.phone}
           </a>
@@ -81,7 +81,7 @@ export function Navbar() {
 
         <button
           type="button"
-          className={cn('rounded-lg p-2 lg:hidden', solid ? 'text-navy-900' : 'text-white')}
+          className={cn('rounded-lg p-2 lg:hidden', solid ? 'text-secondary-900' : 'text-white')}
           onClick={() => setOpen((o) => !o)}
           aria-expanded={open}
           aria-controls="mobile-menu"
@@ -100,7 +100,7 @@ export function Navbar() {
                   to={l.to}
                   end={l.to === '/'}
                   className={({ isActive }) =>
-                    cn('block rounded-lg px-3 py-3 text-base font-semibold', isActive ? 'bg-sun-50 text-sun-700' : 'text-slate-700 hover:bg-slate-50')
+                    cn('block rounded-lg px-3 py-3 text-base font-semibold', isActive ? 'bg-primary-50 text-primary-700' : 'text-slate-700 hover:bg-slate-50')
                   }
                 >
                   {l.label}

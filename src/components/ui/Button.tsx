@@ -8,10 +8,10 @@ export type ButtonSize = 'sm' | 'md' | 'lg';
 const base =
   'inline-flex items-center justify-center gap-2 rounded-xl font-semibold transition-all duration-200 disabled:pointer-events-none disabled:opacity-50 select-none whitespace-nowrap';
 const variants: Record<ButtonVariant, string> = {
-  primary: 'bg-sun-500 text-navy-950 shadow-sm shadow-sun-500/30 hover:bg-sun-400 hover:shadow-md hover:shadow-sun-500/30 active:scale-[0.98]',
-  secondary: 'bg-navy-900 text-white hover:bg-navy-800 active:scale-[0.98]',
-  outline: 'border border-slate-300 bg-white text-navy-900 hover:border-navy-400 hover:bg-navy-50',
-  ghost: 'text-navy-800 hover:bg-navy-50',
+  primary: 'bg-primary-600 text-white shadow-sm shadow-primary-500/30 hover:bg-primary-500 hover:shadow-md hover:shadow-primary-500/30 active:scale-[0.98]',
+  secondary: 'bg-secondary-900 text-white hover:bg-secondary-800 active:scale-[0.98]',
+  outline: 'border border-slate-300 bg-white text-secondary-900 hover:border-secondary-400 hover:bg-secondary-50',
+  ghost: 'text-secondary-800 hover:bg-secondary-50',
   danger: 'bg-red-600 text-white hover:bg-red-700',
   light: 'border border-white/30 bg-white/10 text-white backdrop-blur hover:bg-white/20',
 };

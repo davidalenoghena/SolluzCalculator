@@ -30,7 +30,7 @@ export function AdminLogin({ onSuccess }: { onSuccess: () => void }) {
   };
 
   return (
-    <div className="grid min-h-screen place-items-center bg-navy-950 px-4 py-10">
+    <div className="grid min-h-screen place-items-center bg-secondary-950 px-4 py-10">
       <div className="w-full max-w-md">
         <div className="mb-8 flex justify-center">
           <Link to="/">
@@ -39,7 +39,7 @@ export function AdminLogin({ onSuccess }: { onSuccess: () => void }) {
         </div>
         <form onSubmit={submit} className="rounded-2xl bg-white p-6 shadow-2xl sm:p-8">
           <div className="flex items-center gap-3">
-            <div className="rounded-xl bg-sun-100 p-2.5 text-sun-700">
+            <div className="rounded-xl bg-primary-100 p-2.5 text-primary-700">
               <Lock className="h-5 w-5" />
             </div>
             <div>
@@ -59,7 +59,7 @@ export function AdminLogin({ onSuccess }: { onSuccess: () => void }) {
             This PIN only discourages casual visitors. Because the site runs entirely in the browser, it is not strong security – anyone with technical knowledge can bypass it. Never store sensitive information in the configuration.
           </Alert>
         </form>
-        <p className="mt-6 text-center text-sm text-navy-300">
+        <p className="mt-6 text-center text-sm text-secondary-300">
           <Link to="/" className="hover:text-white">
             ← Back to website
           </Link>

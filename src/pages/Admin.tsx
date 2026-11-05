@@ -98,7 +98,7 @@ function Dashboard({ onLogout }: { onLogout: () => void }) {
             <Link to="/admin">
               <Logo />
             </Link>
-            <Badge tone="navy" className="hidden sm:inline-flex">
+            <Badge tone="secondary" className="hidden sm:inline-flex">
               Admin
             </Badge>
           </div>
@@ -129,7 +129,7 @@ function Dashboard({ onLogout }: { onLogout: () => void }) {
               key={n.to}
               to={n.to ? `/admin/${n.to}` : '/admin'}
               end={!n.to}
-              className={({ isActive }) => cn('shrink-0 rounded-lg px-3 py-1.5 text-sm font-semibold', isActive ? 'bg-navy-900 text-white' : 'text-slate-600 hover:bg-slate-100')}
+              className={({ isActive }) => cn('shrink-0 rounded-lg px-3 py-1.5 text-sm font-semibold', isActive ? 'bg-secondary-900 text-white' : 'text-slate-600 hover:bg-slate-100')}
             >
               {n.label}
             </NavLink>
@@ -146,7 +146,7 @@ function Dashboard({ onLogout }: { onLogout: () => void }) {
                 to={n.to ? `/admin/${n.to}` : '/admin'}
                 end={!n.to}
                 className={({ isActive }) =>
-                  cn('flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-semibold transition', isActive ? 'bg-navy-900 text-white' : 'text-slate-600 hover:bg-slate-100')
+                  cn('flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-semibold transition', isActive ? 'bg-secondary-900 text-white' : 'text-slate-600 hover:bg-slate-100')
                 }
               >
                 <n.icon className="h-4.5 w-4.5" />

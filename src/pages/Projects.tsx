@@ -30,7 +30,7 @@ export default function Projects() {
               onClick={() => setFilter(c)}
               className={cn(
                 'rounded-full px-4 py-2 text-sm font-semibold transition',
-                filter === c ? 'bg-navy-950 text-white' : 'bg-slate-100 text-slate-700 hover:bg-slate-200',
+                filter === c ? 'bg-secondary-950 text-white' : 'bg-slate-100 text-slate-700 hover:bg-slate-200',
               )}
             >
               {c}
@@ -65,7 +65,7 @@ export default function Projects() {
                 {open.images.length > 1 && (
                   <div className="mt-3 flex gap-2 overflow-x-auto">
                     {open.images.map((src, i) => (
-                      <button key={src + i} onClick={() => setImgIdx(i)} className={cn('h-16 w-24 shrink-0 overflow-hidden rounded-lg border-2', i === imgIdx ? 'border-sun-500' : 'border-transparent')}>
+                      <button key={src + i} onClick={() => setImgIdx(i)} className={cn('h-16 w-24 shrink-0 overflow-hidden rounded-lg border-2', i === imgIdx ? 'border-primary-500' : 'border-transparent')}>
                         <img src={assetUrl(src)} alt="" className="h-full w-full object-cover" />
                       </button>
                     ))}
@@ -75,16 +75,16 @@ export default function Projects() {
             )}
             <div className="mt-5 flex flex-wrap gap-4 text-sm text-slate-600">
               <span className="flex items-center gap-1.5">
-                <MapPin className="h-4 w-4 text-sun-600" />
+                <MapPin className="h-4 w-4 text-primary-600" />
                 {open.location}
               </span>
               <span className="flex items-center gap-1.5">
-                <Calendar className="h-4 w-4 text-sun-600" />
+                <Calendar className="h-4 w-4 text-primary-600" />
                 Completed {formatDate(open.completionDate)}
               </span>
               {open.systemSize && (
                 <span className="flex items-center gap-1.5">
-                  <Zap className="h-4 w-4 text-sun-600" />
+                  <Zap className="h-4 w-4 text-primary-600" />
                   {open.systemSize}
                 </span>
               )}

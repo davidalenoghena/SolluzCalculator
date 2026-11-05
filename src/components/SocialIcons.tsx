@@ -30,7 +30,7 @@ export function SocialIcons({ social, className, iconClass }: { social: CompanyI
           target="_blank"
           rel="noopener noreferrer"
           aria-label={paths[k].label}
-          className={cn('rounded-lg p-2 transition-colors', iconClass ?? 'bg-white/10 text-white hover:bg-sun-500 hover:text-navy-950')}
+          className={cn('rounded-lg p-2 transition-colors', iconClass ?? 'bg-white/10 text-white hover:bg-primary-600 hover:text-white')}
         >
           <svg viewBox="0 0 24 24" className="h-4.5 w-4.5" fill="currentColor" aria-hidden>
             <path d={paths[k].d} />

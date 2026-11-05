@@ -11,19 +11,19 @@ export function ProjectCard({ project, onOpen }: { project: Project; onOpen?: ()
       {...(onOpen ? { type: 'button' as const, onClick: onOpen } : {})}
       className="group flex h-full w-full flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white text-left shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
     >
-      <div className="relative aspect-[16/10] overflow-hidden bg-navy-100">
+      <div className="relative aspect-[16/10] overflow-hidden bg-secondary-100">
         {img ? (
           <img src={assetUrl(img)} alt={project.title} loading="lazy" className="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
         ) : (
           <div className="grid h-full place-items-center text-sm text-slate-400">No image</div>
         )}
-        <Badge tone="sun" className="absolute top-3 left-3 shadow">
+        <Badge tone="primary" className="absolute top-3 left-3 shadow">
           {project.category}
         </Badge>
       </div>
       <div className="flex flex-1 flex-col p-5">
         <h3 className="text-lg font-bold">{project.title}</h3>
-        {project.systemSize && <p className="mt-1 text-sm font-semibold text-sun-700">{project.systemSize}</p>}
+        {project.systemSize && <p className="mt-1 text-sm font-semibold text-primary-700">{project.systemSize}</p>}
         <p className="mt-2 line-clamp-3 flex-1 text-sm leading-relaxed text-slate-600">{project.description}</p>
         <div className="mt-4 flex flex-wrap gap-x-4 gap-y-1 text-xs text-slate-500">
           <span className="flex items-center gap-1">

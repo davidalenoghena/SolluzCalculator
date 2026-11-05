@@ -298,7 +298,7 @@ export function EquipmentManager({ draft, update }: ManagerProps) {
             <button
               key={c.id}
               onClick={() => setCat(c.id)}
-              className={cn('shrink-0 rounded-full px-3.5 py-2 text-sm font-semibold transition', cat === c.id ? 'bg-navy-900 text-white' : 'bg-white text-slate-700 shadow-xs ring-1 ring-slate-200 hover:bg-slate-50')}
+              className={cn('shrink-0 rounded-full px-3.5 py-2 text-sm font-semibold transition', cat === c.id ? 'bg-secondary-900 text-white' : 'bg-white text-slate-700 shadow-xs ring-1 ring-slate-200 hover:bg-slate-50')}
             >
               {c.plural} <span className="opacity-60">({n})</span>
             </button>
@@ -311,7 +311,7 @@ export function EquipmentManager({ draft, update }: ManagerProps) {
           <li key={p.id} className={cn('rounded-2xl border bg-white p-4 shadow-xs', p.isActive ? 'border-slate-200' : 'border-dashed border-slate-300 opacity-75')}>
             <div className="flex items-start justify-between gap-3">
               <div className="min-w-0">
-                <p className="font-bold text-navy-950">{p.name}</p>
+                <p className="font-bold text-secondary-950">{p.name}</p>
                 <p className="text-xs text-slate-500">
                   {[p.brand, p.model].filter(Boolean).join(' · ')} <span className="text-slate-400">· id: {p.id}</span>
                 </p>

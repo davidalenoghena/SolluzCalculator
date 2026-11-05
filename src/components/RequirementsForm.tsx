@@ -66,7 +66,7 @@ export function RequirementsForm({ value, onChange, settings, errors }: Props) {
                 key={h}
                 type="button"
                 onClick={() => set('backupHours', h)}
-                className={cn('rounded-full px-4 py-2 text-sm font-semibold transition', value.backupHours === h ? 'bg-navy-900 text-white' : 'bg-slate-100 text-slate-700 hover:bg-slate-200')}
+                className={cn('rounded-full px-4 py-2 text-sm font-semibold transition', value.backupHours === h ? 'bg-secondary-900 text-white' : 'bg-slate-100 text-slate-700 hover:bg-slate-200')}
               >
                 {h} hours
               </button>
@@ -93,11 +93,11 @@ export function RequirementsForm({ value, onChange, settings, errors }: Props) {
                   role="radio"
                   aria-checked={on}
                   onClick={() => set('systemType', t.id)}
-                  className={cn('rounded-xl border-2 p-4 text-left transition', on ? 'border-sun-500 bg-sun-50' : 'border-slate-200 hover:border-navy-300')}
+                  className={cn('rounded-xl border-2 p-4 text-left transition', on ? 'border-primary-500 bg-primary-50' : 'border-slate-200 hover:border-secondary-300')}
                 >
                   <span className="flex items-center gap-2">
-                    <span className={cn('h-4 w-4 rounded-full border-2', on ? 'border-sun-500 bg-sun-500 ring-2 ring-white ring-inset' : 'border-slate-300')} />
-                    <span className="font-bold text-navy-950">{t.label}</span>
+                    <span className={cn('h-4 w-4 rounded-full border-2', on ? 'border-primary-500 bg-primary-500 ring-2 ring-white ring-inset' : 'border-slate-300')} />
+                    <span className="font-bold text-secondary-950">{t.label}</span>
                   </span>
                   <span className="mt-2 block text-xs leading-relaxed text-slate-600">{t.description}</span>
                 </button>
@@ -123,9 +123,9 @@ export function RequirementsForm({ value, onChange, settings, errors }: Props) {
                   role="radio"
                   aria-checked={on}
                   onClick={() => set('allSimultaneous', o.v)}
-                  className={cn('rounded-xl border-2 p-4 text-left transition', on ? 'border-sun-500 bg-sun-50' : 'border-slate-200 hover:border-navy-300')}
+                  className={cn('rounded-xl border-2 p-4 text-left transition', on ? 'border-primary-500 bg-primary-50' : 'border-slate-200 hover:border-secondary-300')}
                 >
-                  <span className="font-semibold text-navy-950">{o.label}</span>
+                  <span className="font-semibold text-secondary-950">{o.label}</span>
                   <span className="mt-1 block text-xs text-slate-600">{o.hint}</span>
                 </button>
               );

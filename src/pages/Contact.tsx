@@ -65,17 +65,17 @@ export default function Contact() {
           {items.map(({ icon: Icon, label, value, href }) => {
             const inner = (
               <>
-                <div className="rounded-xl bg-sun-100 p-3 text-sun-700">
+                <div className="rounded-xl bg-primary-100 p-3 text-primary-700">
                   <Icon className="h-5 w-5" />
                 </div>
                 <div className="min-w-0">
                   <p className="text-xs font-semibold tracking-wide text-slate-500 uppercase">{label}</p>
-                  <p className="mt-0.5 font-semibold break-words text-navy-950">{value}</p>
+                  <p className="mt-0.5 font-semibold break-words text-secondary-950">{value}</p>
                 </div>
               </>
             );
             return href ? (
-              <a key={label} href={href} target={href.startsWith('http') ? '_blank' : undefined} rel="noopener noreferrer" className="flex items-center gap-4 rounded-2xl border border-slate-200 p-4 transition hover:border-sun-300 hover:shadow-sm">
+              <a key={label} href={href} target={href.startsWith('http') ? '_blank' : undefined} rel="noopener noreferrer" className="flex items-center gap-4 rounded-2xl border border-slate-200 p-4 transition hover:border-primary-300 hover:shadow-sm">
                 {inner}
               </a>
             ) : (
@@ -84,7 +84,7 @@ export default function Contact() {
               </div>
             );
           })}
-          <div className="rounded-2xl bg-navy-950 p-5">
+          <div className="rounded-2xl bg-secondary-950 p-5">
             <p className="text-sm font-semibold text-white">Follow us</p>
             <SocialIcons social={c.social} className="mt-3" />
           </div>

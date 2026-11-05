@@ -7,7 +7,7 @@ function Rows({ lines }: { lines: PriceLine[] }) {
       {lines.map((l) => (
         <tr key={l.id} className="border-b border-slate-100 align-top">
           <td className="py-3 pr-3">
-            <span className="block font-medium text-navy-950">{l.label}</span>
+            <span className="block font-medium text-secondary-950">{l.label}</span>
             {l.detail && <span className="block text-xs text-slate-500">{l.detail}</span>}
             <span className="mt-0.5 block text-xs text-slate-500 tabular-nums sm:hidden">
               {l.quantity} × {formatNaira(l.unitPrice)}
@@ -25,11 +25,11 @@ function Rows({ lines }: { lines: PriceLine[] }) {
 function SubRow({ label, value, strong, tone }: { label: string; value: string; strong?: boolean; tone?: 'green' }) {
   return (
     <tr>
-      <td colSpan={3} className={`hidden py-2 pr-3 text-right sm:table-cell ${strong ? 'font-bold text-navy-950' : 'text-slate-600'}`}>
+      <td colSpan={3} className={`hidden py-2 pr-3 text-right sm:table-cell ${strong ? 'font-bold text-secondary-950' : 'text-slate-600'}`}>
         {label}
       </td>
-      <td className={`py-2 pr-3 sm:hidden ${strong ? 'font-bold text-navy-950' : 'text-slate-600'}`}>{label}</td>
-      <td className={`py-2 text-right tabular-nums ${strong ? 'font-bold text-navy-950' : ''} ${tone === 'green' ? 'text-emerald-700' : ''}`}>{value}</td>
+      <td className={`py-2 pr-3 sm:hidden ${strong ? 'font-bold text-secondary-950' : 'text-slate-600'}`}>{label}</td>
+      <td className={`py-2 text-right tabular-nums ${strong ? 'font-bold text-secondary-950' : ''} ${tone === 'green' ? 'text-emerald-700' : ''}`}>{value}</td>
     </tr>
   );
 }
@@ -40,7 +40,7 @@ export function PriceBreakdownTable({ breakdown }: { breakdown: Breakdown }) {
     <div className="overflow-x-auto">
       <table className="w-full text-sm">
         <thead>
-          <tr className="border-b-2 border-navy-900 text-left text-xs font-bold tracking-wide text-slate-500 uppercase">
+          <tr className="border-b-2 border-secondary-900 text-left text-xs font-bold tracking-wide text-slate-500 uppercase">
             <th className="pb-2">Item</th>
             <th className="hidden pb-2 text-right sm:table-cell">Qty</th>
             <th className="hidden pb-2 text-right sm:table-cell">Unit price</th>
@@ -67,12 +67,12 @@ export function PriceBreakdownTable({ breakdown }: { breakdown: Breakdown }) {
           {b.taxLine && <SubRow label={b.taxLine.label} value={formatNaira(b.taxLine.amount)} />}
         </tbody>
         <tfoot>
-          <tr className="border-t-2 border-navy-900">
-            <td colSpan={3} className="hidden pt-3 text-right text-base font-extrabold text-navy-950 sm:table-cell">
+          <tr className="border-t-2 border-secondary-900">
+            <td colSpan={3} className="hidden pt-3 text-right text-base font-extrabold text-secondary-950 sm:table-cell">
               Estimated total
             </td>
-            <td className="pt-3 text-base font-extrabold text-navy-950 sm:hidden">Estimated total</td>
-            <td className="pt-3 text-right text-xl font-extrabold text-navy-950 tabular-nums">{formatNaira(b.total)}</td>
+            <td className="pt-3 text-base font-extrabold text-secondary-950 sm:hidden">Estimated total</td>
+            <td className="pt-3 text-right text-xl font-extrabold text-secondary-950 tabular-nums">{formatNaira(b.total)}</td>
           </tr>
         </tfoot>
       </table>

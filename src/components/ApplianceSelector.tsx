@@ -81,7 +81,7 @@ export function ApplianceSelector({ catalogue, categories, selected, onChange, s
                 onClick={() => setCat(c)}
                 className={cn(
                   'shrink-0 rounded-full px-3 py-1.5 text-xs font-semibold transition',
-                  cat === c ? 'bg-navy-900 text-white' : 'bg-slate-100 text-slate-600 hover:bg-slate-200',
+                  cat === c ? 'bg-secondary-900 text-white' : 'bg-slate-100 text-slate-600 hover:bg-slate-200',
                 )}
               >
                 {c}
@@ -99,21 +99,21 @@ export function ApplianceSelector({ catalogue, categories, selected, onChange, s
                       onClick={() => addFromCatalogue(a)}
                       className={cn(
                         'flex w-full items-center justify-between gap-2 rounded-xl border px-3.5 py-3 text-left transition',
-                        n ? 'border-sun-400 bg-sun-50' : 'border-slate-200 hover:border-navy-300 hover:bg-navy-50/50',
+                        n ? 'border-primary-400 bg-primary-50' : 'border-slate-200 hover:border-secondary-300 hover:bg-secondary-50/50',
                       )}
                     >
                       <span className="min-w-0">
-                        <span className="block truncate text-sm font-semibold text-navy-950">{a.name}</span>
+                        <span className="block truncate text-sm font-semibold text-secondary-950">{a.name}</span>
                         <span className="text-xs text-slate-500">
                           {a.defaultWattage} W · {a.category}
                         </span>
                       </span>
                       {n ? (
-                        <Badge tone="sun">
+                        <Badge tone="primary">
                           <Check className="h-3 w-3" />×{n}
                         </Badge>
                       ) : (
-                        <Plus className="h-5 w-5 shrink-0 text-navy-600" />
+                        <Plus className="h-5 w-5 shrink-0 text-secondary-600" />
                       )}
                     </button>
                   </li>
@@ -126,8 +126,8 @@ export function ApplianceSelector({ catalogue, categories, selected, onChange, s
 
           {/* Custom appliance */}
           <form onSubmit={addCustom} className="rounded-xl border border-dashed border-slate-300 p-4" noValidate>
-            <p className="flex items-center gap-2 text-sm font-bold text-navy-950">
-              <PackagePlus className="h-4 w-4 text-sun-600" /> Add a custom appliance
+            <p className="flex items-center gap-2 text-sm font-bold text-secondary-950">
+              <PackagePlus className="h-4 w-4 text-primary-600" /> Add a custom appliance
             </p>
             <p className="mt-1 text-xs text-slate-500">Check the label on your appliance for its wattage (W).</p>
             <div className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-4">
@@ -194,7 +194,7 @@ export function ApplianceSelector({ catalogue, categories, selected, onChange, s
                         maxLength={60}
                         className="border-transparent bg-transparent px-1 font-semibold shadow-none hover:border-slate-200"
                       />
-                      {a.isCustom && <Badge tone="navy">Custom</Badge>}
+                      {a.isCustom && <Badge tone="secondary">Custom</Badge>}
                       <Button variant="ghost" size="sm" onClick={() => remove(a.uid)} aria-label={`Remove ${a.name}`} className="shrink-0 text-slate-400 hover:bg-red-50 hover:text-red-600">
                         <Trash2 className="h-4 w-4" />
                       </Button>
@@ -215,7 +215,7 @@ export function ApplianceSelector({ catalogue, categories, selected, onChange, s
                     </div>
                     <div className="mt-2 flex justify-between text-xs text-slate-500">
                       <span>Load: {formatWatts(applianceLoadW(a))}</span>
-                      <span className="font-semibold text-navy-800">{formatKwh(applianceDailyWh(a))} / day</span>
+                      <span className="font-semibold text-secondary-800">{formatKwh(applianceDailyWh(a))} / day</span>
                     </div>
                     {errs.length > 0 && <p className="mt-1.5 text-xs font-medium text-red-600">{errs.join(' ')}</p>}
                   </li>
@@ -224,14 +224,14 @@ export function ApplianceSelector({ catalogue, categories, selected, onChange, s
             </ul>
           )}
 
-          <div className="grid grid-cols-2 gap-3 rounded-xl bg-navy-950 p-4 text-white">
+          <div className="grid grid-cols-2 gap-3 rounded-xl bg-secondary-950 p-4 text-white">
             <div>
-              <p className="text-[11px] font-semibold tracking-wide text-navy-300 uppercase">Total connected load</p>
+              <p className="text-[11px] font-semibold tracking-wide text-secondary-300 uppercase">Total connected load</p>
               <p className="text-lg font-bold tabular-nums">{formatWatts(load)}</p>
             </div>
             <div>
-              <p className="text-[11px] font-semibold tracking-wide text-navy-300 uppercase">Daily energy use</p>
-              <p className="text-lg font-bold text-sun-400 tabular-nums" aria-live="polite">
+              <p className="text-[11px] font-semibold tracking-wide text-secondary-300 uppercase">Daily energy use</p>
+              <p className="text-lg font-bold text-primary-400 tabular-nums" aria-live="polite">
                 {formatKwh(energy)}
               </p>
             </div>

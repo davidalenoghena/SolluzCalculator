@@ -29,7 +29,7 @@ export default function Services() {
               id={s.id}
               className={cn('grid scroll-mt-24 items-center gap-8 rounded-3xl p-6 sm:p-10 lg:grid-cols-[auto_1fr_1fr]', i % 2 ? 'bg-slate-50' : 'border border-slate-200 bg-white')}
             >
-              <div className="inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-navy-950 text-sun-400">
+              <div className="inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-secondary-950 text-primary-400">
                 <ServiceIcon name={s.icon} className="h-8 w-8" />
               </div>
               <div>
@@ -49,10 +49,10 @@ export default function Services() {
         </Container>
       </div>
 
-      <section className="bg-navy-950 py-16 text-center text-white">
+      <section className="bg-secondary-950 py-16 text-center text-white">
         <Container>
           <h2 className="text-3xl font-extrabold text-white">Not sure which solution is right for you?</h2>
-          <p className="mx-auto mt-3 max-w-xl text-navy-200">Use our calculator for an instant estimate, or speak to our team directly.</p>
+          <p className="mx-auto mt-3 max-w-xl text-secondary-200">Use our calculator for an instant estimate, or speak to our team directly.</p>
           <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
             <ButtonLink to="/calculator" size="lg" icon={<Calculator className="h-5 w-5" />}>
               Calculate Your Solar Needs

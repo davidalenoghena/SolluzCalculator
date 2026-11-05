@@ -3,28 +3,30 @@
 @theme {
   --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
 
-  --color-navy-50: #f2f6fb;
-  --color-navy-100: #e1eaf5;
-  --color-navy-200: #c3d4ea;
-  --color-navy-300: #94b1d6;
-  --color-navy-400: #5f87bd;
-  --color-navy-500: #3d68a3;
-  --color-navy-600: #2c5288;
-  --color-navy-700: #24426e;
-  --color-navy-800: #1c3356;
-  --color-navy-900: #13243f;
-  --color-navy-950: #0b1628;
+  /* Secondary – Solluz maroon (#940746 = 800) */
+  --color-secondary-50: #fdf2f7;
+  --color-secondary-100: #fbe4ef;
+  --color-secondary-200: #f6c4dc;
+  --color-secondary-300: #ee94bf;
+  --color-secondary-400: #df5b97;
+  --color-secondary-500: #c92f74;
+  --color-secondary-600: #b0185c;
+  --color-secondary-700: #a00d51;
+  --color-secondary-800: #940746;
+  --color-secondary-900: #730637;
+  --color-secondary-950: #4a0423;
 
-  --color-sun-50: #fffaeb;
-  --color-sun-100: #fff0c6;
-  --color-sun-200: #ffe088;
-  --color-sun-300: #ffcb4a;
-  --color-sun-400: #ffb520;
-  --color-sun-500: #f99307;
-  --color-sun-600: #dd6d02;
-  --color-sun-700: #b74b06;
-  --color-sun-800: #943a0c;
-  --color-sun-900: #7a300d;
+  /* Primary – Solluz green (#1BB326 = 500) */
+  --color-primary-50: #edfcee;
+  --color-primary-100: #d5f8d7;
+  --color-primary-200: #aef0b3;
+  --color-primary-300: #76e37f;
+  --color-primary-400: #3fcd4a;
+  --color-primary-500: #1bb326;
+  --color-primary-600: #12931c;
+  --color-primary-700: #12731a;
+  --color-primary-800: #145b1a;
+  --color-primary-900: #134b18;
 
   --animate-fade-up: fade-up 0.6s ease-out both;
   --animate-float: float 6s ease-in-out infinite;
@@ -62,10 +64,10 @@
   h2,
   h3,
   h4 {
-    @apply text-navy-950 tracking-tight;
+    @apply text-secondary-950 tracking-tight;
   }
   :focus-visible {
-    @apply outline-2 outline-offset-2 outline-sun-500;
+    @apply outline-2 outline-offset-2 outline-primary-500;
   }
   input[type='number']::-webkit-inner-spin-button {
     opacity: 0.5;

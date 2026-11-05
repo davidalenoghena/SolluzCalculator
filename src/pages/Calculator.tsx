@@ -282,7 +282,7 @@ export default function Calculator() {
                   )}
                   <div className="flex items-baseline justify-between border-t border-slate-200 pt-3">
                     <span className="font-bold">Estimated total</span>
-                    <span className="text-xl font-extrabold text-navy-950 tabular-nums">{formatNaira(breakdown.total)}</span>
+                    <span className="text-xl font-extrabold text-secondary-950 tabular-nums">{formatNaira(breakdown.total)}</span>
                   </div>
                   <p className="pt-1 text-xs text-slate-500">Preliminary estimate. Final price subject to site assessment.</p>
                   <Button className="mt-2 w-full" onClick={next} icon={<FileText className="h-4 w-4" />}>
@@ -354,7 +354,7 @@ export default function Calculator() {
                       ].map(([k, v]) => (
                         <div key={k} className="flex justify-between gap-3 py-2.5">
                           <dt className="text-slate-600">{k}</dt>
-                          <dd className="text-right font-semibold text-navy-950 tabular-nums">{v}</dd>
+                          <dd className="text-right font-semibold text-secondary-950 tabular-nums">{v}</dd>
                         </div>
                       ))}
                     </dl>
@@ -371,7 +371,7 @@ export default function Calculator() {
                     </Button>
                     <p className="text-center text-xs text-slate-500">
                       Prefer to talk?{' '}
-                      <a href={telLink(config.company.phone)} className="font-semibold text-navy-800 underline">
+                      <a href={telLink(config.company.phone)} className="font-semibold text-secondary-800 underline">
                         Call {config.company.phone}
                       </a>
                     </p>
@@ -427,14 +427,14 @@ export default function Calculator() {
             {step < 2 ? (
               <>
                 <p className="text-[11px] font-semibold tracking-wide text-slate-500 uppercase">Daily energy</p>
-                <p className="text-lg font-extrabold text-navy-950 tabular-nums">
+                <p className="text-lg font-extrabold text-secondary-950 tabular-nums">
                   {formatKwh(sizing.dailyEnergyWh)} <span className="text-sm font-medium text-slate-500">· {appliances.length} items</span>
                 </p>
               </>
             ) : (
               <>
                 <p className="text-[11px] font-semibold tracking-wide text-slate-500 uppercase">Estimated total</p>
-                <p className="text-lg font-extrabold text-navy-950 tabular-nums">{formatNaira(breakdown.total)}</p>
+                <p className="text-lg font-extrabold text-secondary-950 tabular-nums">{formatNaira(breakdown.total)}</p>
               </>
             )}
           </div>
